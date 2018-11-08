@@ -12,23 +12,24 @@
             <p>版权声明：<%- theme.copyright.license %></p>
         </div>
     <% } %>
+
     <!-- paginator  -->
     <ul class="post-paginator">
-
         <li class="previous">
             <% if (page.next){ %>
-                <div class="nextSlogan">Previous Post</div>
                 <a href= "<%- url_for(page.next.path) %>" title= "<%- page.next.title %>">
-                    <div class="prevTitle"><%- page.next.title || '[Untitled Post]' %></div>
+                    <div class="nextSlogan prevTitle">Previous Post</div>
                 </a>
+                 <div><%- page.next.title || '[Untitled Post]' %></div>
             <% } %>
         </li>
-              <li class="next">
+
+        <li class="next">
             <% if (page.prev){ %>
-                <div class="prevSlogan">Next Post</div>
                 <a href= "<%- url_for(page.prev.path) %>" title= "<%- page.prev.title %>">
-                    <div class="nextTitle"><%- page.prev.title || '[Untitled Post]' %></div>
+                    <div class="prevSlogan nextTitle">Next Post</div>
                 </a>
+                 <div><%- page.prev.title || '[Untitled Post]' %></div> 
             <% } %>
         </li>
     </ul>

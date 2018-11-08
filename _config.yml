@@ -5,15 +5,15 @@
 # Site
 title: Hexo
 subtitle:
-description:
+description: Front End Developer 
 keywords:
-author: Andres Alocer
+author: Andres Alcocer
 language:
 timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: http://andres.surge.sh
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -78,9 +78,9 @@ theme: archer
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type: git   
-  repo: https://github.com/AndresXI/My-Blog
-  branch: published 
+  type: 
+  repo: 
+  branch: 
   message: 
 
 # Archer sidebar support 
@@ -102,3 +102,12 @@ jsonContent:
     excerpt: false
     categories: true
     tags: true
+
+
+# Algolia config    
+algolia:
+  applicationID: GI9JWF4EZO
+  apiKey: 363eccbf95e2087e5e3a2b1a5f6a72c0
+  indexName: archer-search
+  chunkSize : 5000
+

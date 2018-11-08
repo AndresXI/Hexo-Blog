@@ -182,6 +182,8 @@
   .prevTitle {
     font-size: 1.2rem;
     color: #ccc;
+    transform: all .2s;
+    
     &:hover {
       color: $feature-color;
     }
