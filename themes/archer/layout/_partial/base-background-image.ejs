@@ -1,27 +1,27 @@
 <div class="site-intro" style="<%- partial('intro-height', {attr: 'height'}) %>">
     <% var bgURL; %>
-    <!-- 主页  -->
+    <!-- homepage  -->
     <% if (is_home()) { %>
     <% bgURL = theme.site_header_image; %>
-    <!-- 文章页  -->
+    <!-- article page  -->
     <% } else if (is_post()) { %>
     <% bgURL = page.header_image || theme.post_header_image || theme.site_header_image; %>
-    <!-- 404页  -->
+    <!-- 404页\  -->
     <% } else if (page.layout === "404") { %>
     <% bgURL = theme._404_image || theme.site_header_image; %>
-    <!-- about页 -->
+    <!-- about -->
     <% } else if (page.layout === "about") { %>
     <% bgURL = theme.about.image || theme.site_header_image; %>
     <% } %>        
     <div class="site-intro-placeholder"></div>
     <div class="site-intro-img" style="background-image: url(<%- url_for(bgURL) %>)"></div>
     <div class="site-intro-meta">
-        <!-- 标题  -->
+        <!-- title  -->
         <h1 class="intro-title">
-            <!-- 主页  -->
+            <!-- homepage -->
             <% if (is_home()) { %>
             <%- theme.main_title || config.title%>
-            <!-- 文章页  -->
+            <!-- article page  -->
             <% } else if(is_post()) { %>
             <%- truncate(strip_html(page.title), {length: 80, omission: '...'}) || '[Untitled Post]' %>
             <!-- 404 -->
@@ -49,10 +49,10 @@
                 <%- page.description %>
             <% } %>
         </p>
-        <!-- 文章页meta -->
+        <!-- article page meta -->
         <% if(is_post()) { %>
             <div class="post-intros">
-                <!-- 文章页标签  -->
+                <!-- article page label -->
                 <% if(page.tags.length) { %>
                     <%- partial('base-title-tags', {
                         currPost: page,
