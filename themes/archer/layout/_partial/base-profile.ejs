@@ -1,3 +1,4 @@
+
 <div class="profile">
     <img class="profile-avatar" alt="avatar" src= <%- url_for(theme.avatar) %> >
     <div class="profile-name"><%- theme.author || config.author %></div>
@@ -23,9 +24,12 @@
             <% } %>
         </div>
     <% } %>
-    <% if(theme.about.enable) { %>
+
+
         <div class="about-me">
-            <a href = "<%- url_for("/about") %>" >About Me</a>
+            <a href="<%- url_for("/about") %>">About Me</a>
         </div>
-    <% } %>
+
+        
+    
 </div>

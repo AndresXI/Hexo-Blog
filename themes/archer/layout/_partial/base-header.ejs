@@ -4,7 +4,7 @@
 <header class="header">
 <% } %>
     <div class="read-progress"></div>
-    <div class="header-sidebar-menu">&#xe775;</div>
+    <div class="header-sidebar-menu" syt>&#xe775;</div>
     <!-- posttoggle banner  -->
     <% if (is_post()) { %>
     <div class="banner">
@@ -16,5 +16,12 @@
             </div>
     </div>
     <% } %>
-    <a class="home-link" href=<%- config.root %>><%- theme.main_title || config.title %></a>
+
+    
+      <a class="home-link" href=<%- config.root %>>Home</a>
+
+    
+
+
+
 </header>

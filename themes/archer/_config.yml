@@ -34,8 +34,11 @@ social:
 #   friendB: //www.google.com
 #   friendC: 
 about:
+  bool: 'hhh'
   enable: true
   image: '/intro/about-bg.jpg'
+
+yo: 'hffffff'
   
 skillset: 
   enable: true
