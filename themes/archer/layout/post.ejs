@@ -1,4 +1,4 @@
-<!-- About Me page -->
+<!-- Post and main page content -->
 <main class="main post-page">
     <article class="article-entry">
         <%- page.content %>
@@ -7,13 +7,13 @@
     <% if(theme.copyright.enable === true && page.copyright !== false) { %>
         <div class="license-wrapper">
             <p><%- __('author') %>：<a href="<%- config.url %>"><%- config.author %></a>
-            <p>原文链接：<a href="<%- page.permalink %>"><%- page.permalink %></a>
-            <p>发表日期：<a href="<%- page.permalink %>"><%- (page.date).format('MMMM Do YYYY, h:mm:ss a') %></a>
-            <p>更新日期：<a href="<%- page.permalink %>"><%- (page.updated).format('MMMM Do YYYY, h:mm:ss a') %></a>
-            <p>版权声明：<%- theme.copyright.license %></p>
+            <p>Description link：<a href="<%- page.permalink %>"><%- page.permalink %></a>
+            <p>Issue Date：<a href="<%- page.permalink %>"><%- (page.date).format('MMMM Do YYYY, h:mm:ss a') %></a>
+            <p>Updated：<a href="<%- page.permalink %>"><%- (page.updated).format('MMMM Do YYYY, h:mm:ss a') %></a>
+            <p>Copyright Notice：<%- theme.copyright.license %></p>
         </div>
     <% } %>
-<a href="http://andres.surge.sh">go back</a>
+    <a style="font-family: Oswald-Regular; color:#F75357;" href=<%- config.root %>>Home</a>
     <!-- paginator  -->
     <ul class="post-paginator">
         <li class="previous">
@@ -34,7 +34,7 @@
             <% } %>
         </li>
     </ul>
-    <!-- 评论插件 -->
+    <!-- comments plugins -->
     <%- partial('_partial/comment/livere') %>
     <%- partial('_partial/comment/disqus') %>
     <%- partial('_partial/comment/gitment') %>

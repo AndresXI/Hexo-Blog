@@ -6,7 +6,7 @@
     <!-- article page  -->
     <% } else if (is_post()) { %>
     <% bgURL = page.header_image || theme.post_header_image || theme.site_header_image; %>
-    <!-- 404页\  -->
+    <!-- 404  -->
     <% } else if (page.layout === "404") { %>
     <% bgURL = theme._404_image || theme.site_header_image; %>
     <!-- about -->
@@ -32,14 +32,14 @@
             <%- page.title || 'About' %>
             <% } %>
         </h1>
-        <!-- 副标题 -->
+        <!-- subtitle -->
         <p class="intro-subtitle">
-            <!-- 主页副标题  -->
+            <!-- home subheading  -->
             <% if (is_home()) { %>
             <% if(typeof theme.subtitle === 'string') { %>
                 <%- theme.subtitle %>
             <% } %>
-            <!-- 文章页  -->
+            <!-- article page  -->
             <% } else if (is_post()) { %>
             <% if(typeof page.subtitle === 'string') { %>
                 <%- page.subtitle %>

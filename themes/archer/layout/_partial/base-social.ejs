@@ -9,7 +9,7 @@
                   <img class="profile-qr" src="<%- url_for(path) %>" />
                 </span>
             <% } else { %>
-                <a href="<%- url_for(theme.social[name]) %>" class="iconfont-archer <%- name %>" target="_blank" title=<%- name %>></a>
+                <a href="<%- url_for(theme.social[name]) %>" class="iconfont-archer <%- name %>"  onMouseOver="this.style.color='#0F0'" target="_blank" title=<%- name %>></a>
             <% } %>
         <% } %>
     <% } %>
