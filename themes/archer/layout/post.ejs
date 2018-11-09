@@ -1,6 +1,6 @@
 <!-- Post and main page content -->
-<main class="main post-page">
-    <article class="article-entry">
+<main class="main post-page" style="margin-top: 50px;">
+    <article class="article-entry" style="margin-bottom: 40px;">
         <%- page.content %>
     </article>
     <!-- license  -->
@@ -13,24 +13,24 @@
             <p>Copyright Notice：<%- theme.copyright.license %></p>
         </div>
     <% } %>
-    <a style="font-family: Oswald-Regular; color:#F75357;" href=<%- config.root %>>Home</a>
+    <a style="font-family: Oswald-Regular; color:#F75357; margin-top: 300px;" href=<%- config.root %>>Home</a>
     <!-- paginator  -->
     <ul class="post-paginator">
         <li class="previous">
             <% if (page.next){ %>
                 <a href= "<%- url_for(page.next.path) %>" title= "<%- page.next.title %>">
-                    <div class="nextSlogan prevTitle">Previous Post</div>
+                    <div style="font-size: 20px;" class="nextSlogan prevTitle">Previous Post</div>
                 </a>
-                 <div><%- page.next.title || '[Untitled Post]' %></div>
+                 <div style="font-size: 14px; color:#8c8c8c;"><%- page.next.title || '[Untitled Post]' %></div>
             <% } %>
         </li>
 
         <li class="next">
             <% if (page.prev){ %>
                 <a href= "<%- url_for(page.prev.path) %>" title= "<%- page.prev.title %>">
-                    <div class="prevSlogan nextTitle">Next Post</div>
+                    <div style="font-size: 20px;" class="prevSlogan nextTitle">Next Post</div>
                 </a>
-                 <div><%- page.prev.title || '[Untitled Post]' %></div> 
+                 <div style="font-size: 14px; color:#8c8c8c;" ><%- page.prev.title || '[Untitled Post]' %></div> 
             <% } %>
         </li>
     </ul>
