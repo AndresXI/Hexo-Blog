@@ -12,13 +12,13 @@ Although javaScript is pretty amazing it is a special breed on its own. JavaScri
 ## The Global Execution Context
 Whenever code is run by javaScript at the global level (meaning not inside a function) it is run inside an execution context. It is basically a wrapper that the javaScript engine creates to wrap your code into an execution context. When we look at a program what we are actually looking at is an execution context being created and run. 
 
-This global execution context is our base execution context, it is accessible everywhere inside our code. So what does it do? First we have to understand that is it created by the javaScript engine, we never write any code to created it. It is part of the Javascript language. It creates two things for us:
+This global execution context is our base execution context, it is accessible everywhere inside our code. So what does it do? First we have to understand that is it created by the javaScript engine, we never write any code to create it. It is part of the Javascript language. It creates two things for us:
 
 - A global Object: A collection of value name pairs. It is always part of the window. Each window has its own execution context. 
 
 - The keyword 'this': A special keyword that has been confusing developers since the creation of the universe
 
-Here we have a window opened in the browser with an empty javaScript file and when we type window into the console we get a window object with a bunch of variables and functions: 
+Here we have a window open in the browser with an empty javaScript file and when we type window into the console we get a window object with a bunch of variables and functions: 
 
 <img src="https://raw.githubusercontent.com/AndresXI/Hexo-Blog/master/window-1.png">
 
@@ -26,10 +26,10 @@ similarly when we type the keyword 'this' into the console we get:
 <img src="https://raw.githubusercontent.com/AndresXI/Hexo-Blog/master/window-2.png">
 
 <br >
-Yes folks, the window object and the keyword 'this' are essentially the same thing...weird huh? But this is only true at the global level. In javaScript we we create variables and functions (at the global level) they get attached to the global object aka the window object or 'this'. Again this is only happening in the global execution context, yes there can many execution contexts (that on its own can be another post!). Say we create a function and a variable at the global level in a javaScript file 
+Yes folks, the window object and the keyword 'this' are essentially the same thing...weird huh? But this is only true at the global level. In javaScript when we create variables and functions (at the global level) they get attached to the global object aka the window object or 'this'. Again this is only happening in the global execution context, yes there can many execution contexts (that on its own can be another post!). Say we create a function and a variable at the global level in a javaScript file 
 
  ```
-  const allDogs = 23; 
+  var allDogs = 23; 
 
   function allDogsSay() {
     console.log("Woof, Woof!); 
