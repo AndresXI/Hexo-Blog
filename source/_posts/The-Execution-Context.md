@@ -22,4 +22,17 @@ Here we have a window opened in the browser with an empty javaScript file and wh
 
 <img src="https://raw.githubusercontent.com/AndresXI/Hexo-Blog/master/window-1.png">
 
-similarly when we type the keyword this into the console we get: 
+similarly when we type the keyword 'this' into the console we get: 
+<img src="https://raw.githubusercontent.com/AndresXI/Hexo-Blog/master/window-2.png">
+
+<br >
+Yes folks, the window object and the keyword 'this' are essentially the same thing...weird huh? But this is only true at the global level. In javaScript we we create variables and functions (at the global level) they get attached to the global object aka the window object or 'this'. Again this is only happening in the global execution context, yes there can many execution contexts (that on its own can be another post!). Say we create a function and a variable at the global level in a javaScript file 
+
+ ```
+  const myAge = 23; 
+
+  function greet() {
+    console.log("Hello there!); 
+  }
+ ```
+ now when we type window into the console we will find our variable and function inside the window object and they will live there for the rest of their lives without any freedom whatsoever. Poor things...
