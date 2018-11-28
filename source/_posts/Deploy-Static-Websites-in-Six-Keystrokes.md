@@ -6,7 +6,7 @@ tags: deploy static websites
 
 # Deploy Static Websites With Surge.sh
 
-So you've finally managed to add all the finishing touches to your project and now you're eagerly wanting to show it off to the world. You can do so easily within minutes with [surge.sh](https://surge.sh/) right from the command line (by the way this blog uses surge). 
+So you've finally managed to add all the finishing touches to your project and now you're eagerly wanting to show it off to the world. You can do so easily within minutes with [surge.sh](https://surge.sh/) right from the command line. 
 
 ## Steps: 
 
