@@ -18,6 +18,8 @@ This global execution context is our base execution context, it is accessible ev
 
 - The keyword 'this': A special keyword that has been confusing developers since the creation of the universe
 
-Here we have a window opened in the browser with an empty javaScript file and when we type window we get: 
+Here we have a window opened in the browser with an empty javaScript file and when we type window into the console we get a window object with a bunch of variables and functions: 
 
-<img src="https://raw.githubusercontent.com/AndresXI/Hexo-Blog/master/window.png">
+<img src="https://raw.githubusercontent.com/AndresXI/Hexo-Blog/master/window-1.png">
+
+similarly when we type the keyword this into the console we get: 
