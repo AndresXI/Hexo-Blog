@@ -29,10 +29,15 @@ similarly when we type the keyword 'this' into the console we get:
 Yes folks, the window object and the keyword 'this' are essentially the same thing...weird huh? But this is only true at the global level. In javaScript we we create variables and functions (at the global level) they get attached to the global object aka the window object or 'this'. Again this is only happening in the global execution context, yes there can many execution contexts (that on its own can be another post!). Say we create a function and a variable at the global level in a javaScript file 
 
  ```
-  const myAge = 23; 
+  const allDogs = 23; 
 
-  function greet() {
-    console.log("Hello there!); 
+  function allDogsSay() {
+    console.log("Woof, Woof!); 
   }
  ```
  now when we type window into the console we will find our variable and function inside the window object and they will live there for the rest of their lives without any freedom whatsoever. Poor things...
+ <img src="https://raw.githubusercontent.com/AndresXI/Hexo-Blog/master/window-3.png">
+
+<br >
+ ## Main takeaway 
+ The main point to takeaway is that before we write any code in javaScript we already have an object that's created, the window object. This is the javaScript engine working behind the scenes. When most people start to learn javaScript they don't pay attention to what's happening behind the scenes they are more concerned with syntax of the language (as it was the case with me). If you feel comfortable working with javaScript I recommend you start learning how javaScript works under the hood and for that my friends I recombed this course on Udemy: [JavaScript: Understating the Weird Parts](https://www.udemy.com/understand-javascript/). See you guys next time and go hack something. Now!
