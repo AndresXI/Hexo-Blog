@@ -9,7 +9,7 @@ tags: Array methods in ES6
 <hr style="border: .5px dashed gray; width: 50%" />
 
 # forEach 
-<strong>T</strong>he forEach loop is one of the most commonly used array helper methods in ES6. When we call the forEach method we pass in an anoumous function and this function gets called for every element in the array. This function is commonly reffered to as the irerator fucntion. The argument is usually named after the singular version of the array. 
+<strong>T</strong>he forEach loop is one of the most commonly used array helper methods in ES6. When we call the forEach method we pass in an anonymous function and this function gets called for every element in the array. This function is commonly reffered to as the irerator fucntion. The argument is usually named after the singular version of the array. 
 
 ```
 const colors = ['red', 'blue', 'green']; 

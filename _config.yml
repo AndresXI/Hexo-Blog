@@ -3,9 +3,9 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
+title: Andres Alcocer
 subtitle:
-description: Front End Developer 
+description: You can always find me hacking away with javaScript while driking coffee. I'am always open to new ideas and willing to engage in deep philosophical discussions. I enjoy the arts, traveling, and tacos. Things I hate are politics, speaking in large crowds, and slow internet connection.  
 keywords:
 author: Andres Alcocer
 language:
@@ -13,7 +13,7 @@ timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://andres.surge.sh
+# url: http://andres.surge.sh
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -73,7 +73,7 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: archer
+theme: cactus
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
